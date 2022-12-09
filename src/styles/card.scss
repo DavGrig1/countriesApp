@@ -1,0 +1,60 @@
+@use 'shortcuts' as *;
+
+.cardContainer {
+	background: var(--colors-ui-base);
+	border-radius: $radius;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	overflow: hidden;	
+	.cardBody {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 1rem;
+
+	}
+	
+	.image {
+		display: block;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		box-shadow: var(--shadow);
+	}
+
+	.title {
+		font-weight: 800;
+	}
+
+	.list {
+		list-style: none;
+		line-height: 1.5;
+		margin: 0;
+		padding: 1rem 0 0;
+	}
+}
+
+@media (min-width: 280px) {
+	.cardContainer {
+		margin: 0 2rem;
+	}
+}
+
+@media (min-width: 867px) {
+	.cardContainer {
+		margin: 0 5rem;
+	}
+}
+
+@media (min-width: 1140px) {
+	.cardContainer {
+		margin: 0 1rem;
+	}
+}
+
+@media (min-width: 1500px) {
+	.cardContainer {
+		margin: 0;
+	}
+}

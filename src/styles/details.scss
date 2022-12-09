@@ -1,0 +1,24 @@
+@use 'shortcuts' as *;
+
+.detailsContainer {
+	.goBackBtn {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		padding: 0 1rem;
+		color: var(--colors-text);
+		background: var(--colors-bg);
+		box-shadow: var(--shadow);
+		border: none;
+		border-radius: $radius;
+		overflow: hidden;
+		line-height: 2.5;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 1500px) {
+	.detailsContainer {
+		margin-left: 1rem;
+	}
+}

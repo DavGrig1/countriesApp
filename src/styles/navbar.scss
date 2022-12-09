@@ -1,0 +1,46 @@
+@use 'shortcuts' as *;
+
+.navbar {
+   margin-bottom: 1rem;
+   box-shadow: var(--shadow);
+}
+
+.navContainer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0;
+   max-width: 1500px;
+   margin: 0 auto;
+   
+   
+   button {
+      display: flex;
+      color: var(--colors-text);
+      align-items: center;
+      padding: 0.3rem;
+      font-size: 1rem;
+      background: transparent;
+      border: 1px solid var(--colors-text);
+      border-radius: $radius;
+      cursor: pointer;
+   }
+   
+   .icon {
+      margin-right: 0.3rem;
+   }
+}
+
+@media (max-width: 1500px) {
+   .navContainer {
+      padding: 1rem;
+   }
+}
+
+@media (max-width: 767px) {
+   .navContainer {
+      h1 {
+         font-size: 1rem;
+      }
+   }
+}
