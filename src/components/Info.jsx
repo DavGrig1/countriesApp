@@ -59,7 +59,7 @@ const Info = (props) => {
 				): (
 					<div className='borderButtons'>
 						{borderCountries.map(b => (
-							<button key={b} onClick={() => navigate(`/country/${b}`)} className='borderButton'>{b}</button>
+							<button key={b} onClick={() => navigate(`/countriesApp/country/${b}`)} className='borderButton'>{b}</button>
 						))}
 					</div>
 				)}

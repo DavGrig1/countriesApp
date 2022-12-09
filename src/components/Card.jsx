@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/card.scss'
 
 const Card = ({img, name, info = [], onClick}) => {
+  
   return (
 	  <div className='cardContainer' onClick={onClick}>
       <img src={img} alt={name} className='image'/>

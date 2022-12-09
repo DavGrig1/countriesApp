@@ -17,7 +17,7 @@ const Details = () => {
 
 	return (
 		<div className='detailsContainer'>
-			<button className='goBackBtn' onClick={() => navigate('/')}><IoArrowBack /> Go back</button>
+			<button className='goBackBtn' onClick={() => navigate('/countriesApp/')}><IoArrowBack /> Go back</button>
 			{countryDetails && (
 				<Info {...countryDetails} navigate={navigate}/>
 			)}

@@ -19,11 +19,11 @@ const App = () => {
          <Navbar />
          <div className='container'>
             <Routes>
-               <Route path='/' 
+               <Route path='/countriesApp/' 
                   element={<HomePage countries={countries} />}
                />
                
-               <Route path='country/:name' 
+               <Route path='countriesApp/country/:name' 
                   element={<Details />} 
                />
                

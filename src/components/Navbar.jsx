@@ -14,7 +14,7 @@ const Navbar = () => {
 	return (
 			<nav className='navbar'>
 				<div className='navContainer'>
-					<Link to={'/'}>
+					<Link to={'/countriesApp/'}>
 						<h1>Where in the world?</h1>
 					</Link>
 					<button onClick={changeMode}>
